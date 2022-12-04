@@ -17,3 +17,7 @@ const closeModal = () => {
 };
 btnCloseModal.addEventListener('click', closeModal);
 overly.addEventListener('click', closeModal);
+
+document.addEventListener('keydown',(event)=>{
+  (event.key === 'Escape') ? closeModal() : false;
+})
